@@ -1,14 +1,14 @@
 pipeline {
 	agent any
-	// environments
-	// 	{
-	// 		dockerHome = tool 'MyDocker'
-	// 		mavenHome= tool 'MyMaven'
-	// 		PATH="$dockerHome/bin:$mavenHome/bin:$PATH"
+	environments
+		{
+			dockerHome = tool 'MyDocker'
+			mavenHome= tool 'MyMaven'
+			PATH="$dockerHome/bin:$mavenHome/bin:$PATH"
 
-	// 	}
+		}
 	stages {
-		stage('Build')
+		stage('CheckOut')
 		{
 			steps
 			{
