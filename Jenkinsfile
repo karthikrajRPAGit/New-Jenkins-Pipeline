@@ -69,7 +69,7 @@ pipeline {
 			{
 				script
 				{
-					docker.withregistry('','dockerConn')
+					docker.withRegistry('','dockerConn')
 					{
 					//docker build -t dockthik/currency-exchange-jenkins:${env.BUILD_TAG}
 					//docker.build("dockthik/currency-exchange-jenkins:${env.BUILD_TAG}")
