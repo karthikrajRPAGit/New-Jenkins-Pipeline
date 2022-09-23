@@ -26,6 +26,7 @@ pipeline {
 			steps
 			{
 				sh "mvn clean compile"
+				sh "mvn clean package"
 			}
 			//ssh "mvn clean compile"
 		}
