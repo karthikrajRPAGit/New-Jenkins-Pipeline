@@ -40,7 +40,7 @@ public class CurrencyExchangeSteps {
     public void the_system_is_asked_to_provide_the_conversion_rate() throws Exception {
     }
 
-    @Then("^It should output (.*)$")
+    @Then("^It should be output (.*)$")
     public void thenCheckOutput(float response) {
        Assert.assertEquals(output, response,0.5);
 
