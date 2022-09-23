@@ -27,7 +27,7 @@ pipeline {
 			{
 				sh "mvn clean compile"
 			}
-			#ssh "mvn clean compile"
+			//ssh "mvn clean compile"
 		}
 
 		stage('Test')
